@@ -17,16 +17,32 @@ body{
 	margin: 0;
 }
 
-ul,h1,h2,h3,p,ul{
+ul,h1,h2,h3,p,ul,a{
 	margin: 0;
 	padding: 0;
+	display: inherit;
+}
+
+/* Секция */
+
+.section{
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+/* Контейнер */
+
+.container{
+	width: 1200px;
+	margin: 0px auto;
+  padding-left: 15px;
+	padding-right: 15px;
+	/* outline:1px solid navy; */
 }
 
 /* Лого */
 
 .logo-web{
-	margin-left: 215px auto;
-	margin-bottom: 25px;
 	font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -34,20 +50,42 @@ ul,h1,h2,h3,p,ul{
 	letter-spacing: 0.03em;
 	color: var(--navigation);
 }
-
-.logo-footer{
-	color:var(--background);
+.logo-top{
+  margin: 25px 93px 25px 15px;
 }
 
 .logo-header{
 	color: var(--text-primary-color)
 }
 
-/* Header */
-.header{
-	padding-top: 25px;
-	padding-bottom: 25px;
+.logo-botton{
+	padding-top: 60px;
+	margin-bottom: 20px;
+}
 
+.logo-footer{
+	color:var(--background);
+}
+
+/* Header */
+
+.header{
+	border-bottom:#ECECEC 1px;
+}
+
+.header-nav{
+	display: flex;
+	align-items: center;
+}
+
+.header .container{
+	display: flex;
+	align-items: center;
+}
+
+.list-link,
+.header-item:not(:last-child){
+	margin-right: 50px;
 }
 
 .link{
@@ -76,7 +114,13 @@ ul,h1,h2,h3,p,ul{
 	color: var(--navigation);
 }
 
+
 /* Контакты */
+
+.header-contacts{
+	margin-left: auto;
+	display: flex;
+}
 
 .contacts{
 	font-weight: 500;
@@ -93,8 +137,8 @@ ul,h1,h2,h3,p,ul{
 /* Адрес */
 
 .adress{
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	flex-direction: column; */
 	font-style: normal;
   line-height: 1.71em;
   letter-spacing: 0.03em;
@@ -104,8 +148,14 @@ ul,h1,h2,h3,p,ul{
 /* Герой */
 
 .hero{
+	padding-top: 0;
+	padding-bottom: 0;
   background-color: var(--acent);
 	text-align: center;
+}
+
+.hero-content{
+	padding: 200px 252px 280px 252px ;
 }
 
 .hero-text{
@@ -121,7 +171,6 @@ ul,h1,h2,h3,p,ul{
 }
 
 .hero-button{
-	/* margin-bottom: 294px; */
 	min-width: 200px;
 	height: 50px;
 	border-radius: 4px;
@@ -146,6 +195,20 @@ ul,h1,h2,h3,p,ul{
 .list{
 list-style: none;
 }
+
+/* Наши преимущества */
+
+
+.list.unicals{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+
+.benefits{
+	padding-bottom: 0;
+}
+
 .benefits-list{
 	margin-bottom: 10px;
   font-weight: 700;
@@ -154,30 +217,76 @@ list-style: none;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .benefits-text{
-	margin-bottom: 94px;
+	width: 270px;
+  height: 75px;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
 	color: var(--text-regular);
 }
-.chapter{
+
+.chapter-work{
 	margin-bottom: 50px;
-	padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16em;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-member{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18em;
-text-align: center;
-letter-spacing: 0.03em;
+
+.chapter-list{
+	display: flex;
+  justify-content: space-between;
 }
+
+.chapter-item{
+  width: 370px;
+	height: 294px;
+}
+
+/* Тиам */
+
+.section.team{
+	background-color: var(--background-team-color);
+}
+
+.chapter-team{
+	padding-bottom: 50px;
+	font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-item{
+	background-color: var(--background);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  }
+
+.team.list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.team-photo{
+	margin-bottom: 30px;
+}
+
+.team-member{
+	margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
+
 .work-name{
+	padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18em;
   text-align: center;
@@ -190,7 +299,21 @@ letter-spacing: 0.03em;
 .footer{
 	background-color:var(--acent);
 }
+.footer .container{
+	display: flex;
+	flex-direction: column;
+}
+
+.adress .link{
+	margin-bottom: 9px;
+}
+
+  .adress .link:last-child {
+  margin-bottom: 60px;
+}
+
 /* Галерея */
+
 .galery-button{
 	font-family:inherit;
   font-weight: 500;
@@ -201,6 +324,7 @@ letter-spacing: 0.03em;
 	background-color: #F5F4FA;
 	color: var(--text-primary-color);
 }
+
 .galery-button:hover,
 .galery-button:focus{
 	color: var(--background);
@@ -213,51 +337,21 @@ letter-spacing: 0.03em;
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+
 .projeckt-description{
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color:var(--text-regular);
 } 
-.container{
-	width: 1200px;
-	margin: 0 auto;
-  padding-left: 15px;
-	padding-right: 15px;
-	outline:1px solid navy;
-}
-.list.unicals{
-	display: flex;
-	flex-direction: row-reverse;
-	margin-bottom: 94px;
-}
-.chapter.list{
-	display: flex;
-	justify-content: space-around ;
-	margin-bottom: 188px;
-}
-.team.list{
-	display: flex;
-	justify-content: space-around;
-	
-}
-.list.nav{
-	display: flex;
-}
-.list.contacts{
-	display: flex;
-	justify-content: flex-end;
-}
-li.team{
-	border:  2px solid#2196F3;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 0px 0px 4px 4px;
-	margin-bottom: 94px;
-}
-.hero-content{
-	padding: 200px 252px 280px 252px ;
-}
 
-section.team{
-	background-color: var(--background-team-color);
-}
+
+
+
+
+
+
+
+
+
+

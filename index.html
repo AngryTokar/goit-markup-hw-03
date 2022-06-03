@@ -17,24 +17,28 @@
 	<!-- Хеадер -->
 	<header class="header">
 		<div class="container">
-		<nav>
+		<nav class="header-nav">
+			<div class="logo-top">
 				<a class="logo-web link" href="#">Web<span class="logo-header">Studio</span></a>
-				<ul class="list nav">
-					<li><a href="#" class="top-menu link">Студия</a></li>
-					<li><a href="./portfolio.html" class="top-menu link">Портфолио</a></li>
-					<li><a href="#" class="top-menu link">Контакты</a></li>
+				</div>
+				<ul class="header-list list">
+					<li class="header-item"><a href="#" class="top-menu link">Студия</a></li>
+					<li class="header-item"><a href="./portfolio.html" class="top-menu link">Портфолио</a></li>
+					<li class="header-item"><a href="#" class="top-menu link">Контакты</a></li>
 				</ul>
 		</nav>
+		<div class="header-contacts">
 		<ul class="list contacts">
-			<li><a class="contacts link" href="mailto:info@example.com">info@example.com</a></li>
-			<li><a class="contacts link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+			<li class="list-link"><a class="contacts link" href="mailto:info@example.com">info@example.com</a></li>
+			<li class="list-link"><a class="contacts link" href="tel:+380991111111">+38 099 111 11 11</a></li>
 		</ul>
+	  </div>
 		</div>
 	</header>
 	<!-- Мэин -->
 	<main>
 		<!--Герой-->
-		<section class="hero">
+		<section class="section hero">
 			<div class="container">
 				<div class="hero-content">
 				<h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
@@ -43,28 +47,29 @@
 			</div>
 		</section>
 		<!--Наши преимущества-->
-		<section>
+		<section class="section benefits">
 			<div class="container">
 				<h2 class="visually-hidden">Наши преимущества</h2>
 				<ul class="list unicals">
-					<li>
+					<li class="unicals-item">
 						<h3 class="benefits-list">Внимание к деталям</h3>
-						<p class="benefits-text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+						<p class="benefits-text">Идейные соображения, а также начало повседневной работы 
+							по формированию позиции.
 						</p>
 					</li>
-					<li>
+					<li class="unicals-item">
 						<h3 class="benefits-list">Пунктуальность</h3>
 						<p class="benefits-text">
 							Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 						</p>
 					</li>
-					<li>
+					<li class="unicals-item">
 						<h3 class="benefits-list">Планирование</h3>
 						<p class="benefits-text">
 							Равным образом консультация с широким активом в значительной степени обуславливает.
 						</p>
 					</li>
-					<li>
+					<li class="unicals-item">
 						<h3 class="benefits-list">Современные технологии</h3>
 						<p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 					</li>
@@ -72,19 +77,19 @@
 			</div>
 		</section>
 		<!--Чем мы занимаемся-->
-		<section>
-			<div class="container">
-				<h2 class="chapter">Чем мы занимаемся</h2>
+		<section class="section chapter">
+			<div class="container ">
+				<h2 class="chapter-work">Чем мы занимаемся</h2>
 
-				<ul class="chapter list">
-					<li>
+				<ul class="chapter-list list">
+					<li class="chapter-item">
 						<img src="./images/Our_works/img.jpg" alt="Блок-схема. Руки печатают на клавиатуре" width="370" />
 					</li>
-					<li>
+					<li class="chapter-item">
 						<img src="./images/Our_works/img_(1).jpg"
-							alt="Телефон в руках перед ноутбуком,на экране которого фотографии экрана телефона" width="370" />
+							alt="Телефон в руках перед ноутбуком,на экране которого фотографии экрана телефона" width="370"/>
 					</li>
-					<li>
+					<li class="chapter-item">
 						<img src="./images/Our_works/img_(2).jpg" alt="Планшет в левой руке. На экране планета палитра цветов."
 							width="370" />
 					</li>
@@ -92,30 +97,30 @@
 			</div>
 		</section>
 		<!--Наша команда-->
-		<section class="team">
+		<section class="section team">
 			<div class="container team">
-				<h2 class="chapter">Наша команда</h2>
+				<h2 class="chapter-team">Наша команда</h2>
 				<ul class="team list">
-					<li class="team">
-						<img src="./images/Our_team/Ihor_Demyanenko.jpg"
+					<li class="team-item">
+						<img class="team-photo" src="./images/Our_team/Ihor_Demyanenko.jpg"
 							alt="Белый мужчина в очках с бородой и в коричневой рубашке улыбается" width="270" />
 						<h3 class="team-member">Игорь Демьяненко</h3>
 						<p class="work-name">Product Designer</p>
 					</li>
-					<li>
-						<img src="./images/Our_team/Olha_Repina.jpg"
+					<li class="team-item">
+						<img class="team-photo" src="./images/Our_team/Olha_Repina.jpg"
 							alt="Белая женщина в очках, с длинными волосами в сером пиджаке, улыбается" width="270" />
 						<h3 class="team-member">Ольга Репина</h3>
 						<p class="work-name">Frontend Developer</p>
 					</li>
-					<li>
-						<img src="./images/Our_team/Nikolai_Tarasov.jpg" alt="Белый мужчина в светло-голубой рубашке улыбается"
+					<li class="team-item">
+						<img class="team-photo" src="./images/Our_team/Nikolai_Tarasov.jpg" alt="Белый мужчина в светло-голубой рубашке улыбается"
 							width="270" />
 						<h3 class="team-member">Николай Тарасов</h3>
 						<p class="work-name">Marketing</p>
 					</li>
-					<li>
-						<img src="./images/Our_team/Mikhail_Ermakov.jpg" alt="Белый мужчина в очках и черной футболке"
+					<li class="team-item">
+						<img class="team-photo" src="./images/Our_team/Mikhail_Ermakov.jpg" alt="Белый мужчина в очках и черной футболке"
 							width="270" />
 						<h3 class="team-member">Михаил Ермаков</h3>
 						<p class="work-name">UI Designer</p>
@@ -128,8 +133,10 @@
 	<!--Футер-->
 
 	<footer class="footer">
-		<div class="container">
+		<div class="container footer">
+			<div class="logo-botton">
 			<a class="logo-web link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+			</div>
 			<address class="adress">
 				<a class="adress link"
 					href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,475m/data=!3m1!1e3!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
