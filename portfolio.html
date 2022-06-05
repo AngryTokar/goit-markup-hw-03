@@ -9,33 +9,31 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/styles.css" />
 	<title>WebStudio</title>
 </head>
 
 <body>
 	<!-- Хеадер -->
-	<header class="header">
-		<div class="container header">
-			<nav class="header-nav">
-				<div class="logo-top">
-					<a class="logo-web link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-				</div>
-				<ul class="header-list list">
-					<li class="header-item"><a href="./index.html" class="top-menu link">Студия</a></li>
-					<li class="header-item"><a href="#" class="top-menu link">Портфолио</a></li>
-					<li class="header-item"><a href="#" class="top-menu link">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="header-contacts">
+		<header class="header">
+			<div class="container header-container">
+				<nav class="header-nav">
+					<a class="logo-web link" href="/index.html">Web<span class="logo-header">Studio</span></a>
+					<ul class="header-list list">
+						<li class="header-item"><a href="./index.html" class="top-menu link">Студия</a></li>
+						<li class="header-item"><a href="#" class="top-menu link">Портфолио</a></li>
+						<li class="header-item"><a href="#" class="top-menu link">Контакты</a></li>
+					</ul>
+				</nav>
 				<ul class="list contacts">
 					<li class="list-link"><a class="contacts header link" href="mailto:info@example.com">info@example.com</a></li>
 					<li class="list-link"><a class="contacts header link" href="tel:+380991111111">+38 099 111 11 11</a></li>
 				</ul>
 			</div>
-		</div>
-	</header>
+		</header>
 	<!-- Мэин -->
 	<main class="portfolio-main">
 		<!-- Фильтр галереи -->
@@ -50,62 +48,82 @@
 					<li class="galery-link"><button type="button" class="galery-button">Маркетинг</button></li>
 				</ul>
 			</div>
-		</section>
+
 		<!-- Примеры проэктов -->
-		<section class="section projeckt-list">
+
 			<div class="container projeckt-container">
+				<div class="portfolio-wrapper">
 				<h2 class="visually-hidden">Наши Проэкты</h2>
+				</div>
 				<ul class="projeckt-list list">
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/tehnokriyak.jpg" alt="Ноутбук с портфолио"
 							width="370">
+							<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Технокряк</h3>
 						<p class="projeckt-description">Веб-сайт</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/new_orlean.jpg" alt="Постер с баскетболистами"
 							width="370">
+							<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Постер New Orlean vs Golden Star</h3>
 						<p class="projeckt-description">Дизайн</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/seafood.jpg" alt="Лого ресторана Seafood"
 							width="370">
+						<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Ресторан Seafood</h3>
 						<p class="projeckt-description">Приложение</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images//Projeckt_examples/headphones.jpg" alt="Черные наушники"
 							width="370">
+						<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Проект Prime</h3>
 						<p class="projeckt-description">Маркетинг</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/boxes.jpg" alt="Коробочки" width="370">
+						<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Проект Boxes</h3>
 						<p class="projeckt-description">Приложение</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/monitor.jpg"
-							alt="Монитор с открытым сайтом на экране" width="370">
-						<h3 class="projeckt-name">Inspiration has no Borders</h3>
+					    alt="Монитор с открытым сайтом на экране" width="370">
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Inspiration has no Borders</h3>
 						<p class="projeckt-description">Веб-сайт</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/buklets.jpg" alt="Буклет" width="370">
+						<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Издание Limited Edition</h3>
 						<p class="projeckt-description">Дизайн</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/tags.jpg" alt="Бирка с английским алфовитом"
 							width="370">
+						<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Проект LAB</h3>
 						<p class="projeckt-description">Маркетинг</p>
+						</div>
 					</li>
 					<li class="projeckt-link">
 						<img class="projeckt-foto" src="./images/Projeckt_examples/notebook.jpg" alt="Ноутбук" width="370">
+						<div class="portfolio-wrapper">
 						<h3 class="projeckt-name">Growing Business</h3>
 						<p class="projeckt-description">Приложение</p>
+						</div>
 					</li>
 				</ul>
 			</div>
